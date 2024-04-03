@@ -25,6 +25,9 @@ const config: HardhatUserConfig = {
 			chainId: 137,
 		},
 	},
+	etherscan: {
+		apiKey: process.env.ETHERSCAN_API_KEY ?? '',
+	},
 	gasReporter: {
 		enabled: true,
 		outputFile: 'gas-report.txt',
